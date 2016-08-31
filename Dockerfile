@@ -20,6 +20,8 @@ RUN cd /usr/local/ && curl -L -O http://dl.google.com/android/android-sdk_r24.4.
 
 RUN cd /usr/local/ && curl -L -O https://services.gradle.org/distributions/gradle-2.14.1-all.zip && unzip -o gradle-2.14.1-all.zip
 
+RUN gem install fastlane
+
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
 ENV ANDROID_HOME /usr/local/android-sdk-linux
 ENV GRADLE_HOME /usr/local/gradle-2.14.1
