@@ -4,7 +4,7 @@ wercker.ymlは、こんな感じに書いたら、動く。
 ライブラリのバージョンとかには**注意**
 
 ```wercker.yml
-box: gupuru/wercker_android:0.3.0
+box: gupuru/wercker_android:0.3.2
 
 build:
   steps:
