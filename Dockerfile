@@ -15,8 +15,8 @@ RUN \
 
 RUN cd /usr/local/ && curl -L -O http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz && tar xf android-sdk_r24.4.1-linux.tgz && \
     echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --force --all --filter "tools" && \
-    echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --force --all --filter "platform-tools,build-tools-24.0.3, build-tools-24.0.0, build-tools-23.0.3,build-tools-23.0.2,build-tools-23.0.1,android-23,android-24,android-25" && \
-    echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --force --all --filter "extra-google-google_play_services,extra-google-m2repository,extra-android-m2repository,extra-android-support,addon-google_apis-google-23,addon-google_apis-google-24"
+    echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --force --all --filter "platform-tools, build-tools-25.0.1, build-tools-24.0.3, build-tools-23.0.3, android-23, android-24, android-25" && \
+    echo y | /usr/local/android-sdk-linux/tools/android update sdk --no-ui --force --all --filter "extra-google-google_play_services, extra-google-m2repository, extra-android-m2repository, extra-android-support, addon-google_apis-google-23, addon-google_apis-google-24, addon-google_apis-google-25"
 
 RUN cd /usr/local/ && curl -L -O https://services.gradle.org/distributions/gradle-2.14.1-all.zip && unzip -o gradle-2.14.1-all.zip
 

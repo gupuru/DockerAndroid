@@ -1,6 +1,8 @@
-# Werckerで使うAndroid Box
+# Androidのビルド用のDocker
 
-wercker.ymlは、こんな感じに書いたら、動く。
+
+## Werckerで使う場合
+
 ライブラリのバージョンとかには**注意**
 
 ```wercker.yml
